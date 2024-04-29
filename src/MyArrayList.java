@@ -77,7 +77,7 @@ public class MyArrayList<T> implements MyList<T> {
         if (numMoved > 0) {
             System.arraycopy(arr, index + 1, arr, index, numMoved);
         }
-        arr[--size] = null; // clear to let GC do its work
+        arr[--size] = null;
     }
 
     @Override
@@ -92,7 +92,7 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void sort() {
-        Arrays.sort(arr, 0, size);
+
     }
 
     @Override

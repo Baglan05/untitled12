@@ -1,8 +1,23 @@
 public class MyStack<T> {
-    private final MyArrayList<T> list = new MyArrayList<>();
 
-    public void push(T item) { list.add(item); }
-    public T pop() { return list.removeLast(); }
-    public T peek() { return list.getLast(); }
-    public boolean isEmpty() { return list.size() == 0; }
+    MyArrayList<T> arr = new MyArrayList<>();
+    public boolean is_empty(){
+        return this.arr.size() == 0;
+    }
+
+    public int size(){
+        return this.arr.size();
+    }
+
+    public T peek(){
+        return this.arr.getLast();
+    }
+
+    public void push(T element){
+        this.arr.add(element);
+    }
+
+    public void pop(){
+        this.arr.remove(this.arr.size()-1);
+    }
 }

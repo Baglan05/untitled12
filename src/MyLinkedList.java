@@ -149,8 +149,7 @@ public class MyLinkedList<T> implements MyList<T> {
 
     @Override
     public void sort() {
-        // This method would typically involve a sorting algorithm such as merge sort.
-        // Not implemented here due to complexity.
+
     }
 
     @Override
